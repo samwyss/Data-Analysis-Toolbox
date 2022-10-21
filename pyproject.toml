@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "data_analysis_toolbox"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Sam Wyss", email="sjwyss@outlook.com" },
 ]
