@@ -99,8 +99,9 @@ class PlotTemplates:
         # input validation
         assert isinstance(arr, np.ndarray), f"Error in 'arr', {arr} is not of type 'ndarray'"
 
-        mult = 1.1
-        return tuple([np.min(arr) * mult, np.max(arr) * mult])
+        umult = 1.05  # Max Axis Multiplier
+        lmult = 0.95  # Min Axis Multiplier
+        return tuple([np.min(arr) * lmult, np.max(arr) * umult])
     
     @classmethod
     def line_plot(cls, x, y, xstr="", ystr="", xscale="linear", yscale="linear", xlim=(0,0), ylim=(0,0)) -> None:
